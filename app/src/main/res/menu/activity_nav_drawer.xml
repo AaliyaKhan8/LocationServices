@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/map"
+            android:icon="@drawable/map"
+            android:title="Map" />
+        <item
+            android:id="@+id/raw"
+            android:icon="@drawable/raw"
+            android:title="Book Raw Materials" />
+        <item
+            android:id="@+id/truck"
+            android:icon="@drawable/truck"
+            android:title="Book Truck" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>
