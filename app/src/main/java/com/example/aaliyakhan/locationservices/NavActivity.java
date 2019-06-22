@@ -1,6 +1,5 @@
 package com.example.aaliyakhan.locationservices;
 
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -69,9 +68,14 @@ public class NavActivity extends AppCompatActivity
         } else if (id == R.id.truck) {
             getSupportFragmentManager().beginTransaction().replace(R.id.container,new BookTruckFragment()).commit();
 
-        } else if (id == R.id.logout) {
+        } else if (id == R.id.orders) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new OrdersFragment()).commit();
+
+        }
+        else if (id == R.id.logout) {
              startActivity(new Intent(NavActivity.this,LoginActivity.class));
         }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

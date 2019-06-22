@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardBackgroundColor="#ffffff"
+            android:id="@+id/bankcardId"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="2dp">
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/name"
+                    android:drawablePadding="10dp"
+                    android:text="A2B"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:drawableLeft="@drawable/ic_dialpad_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/code"
+                    android:drawablePadding="10dp"
+                    android:text="A2B"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/from"
+                    android:text="9876543423"
+                    android:textColor="@android:color/darker_gray"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/to"
+                    android:text="9876543423"
+                    android:textColor="@android:color/darker_gray"/>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end|bottom"
+                android:text="Track"
+                android:textColor="#ffffff"
+                android:id="@+id/start"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/corner_button"/>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

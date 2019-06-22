@@ -17,6 +17,10 @@
             android:icon="@drawable/truck"
             android:title="Book Truck" />
         <item
+            android:id="@+id/orders"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Orders" />
+        <item
             android:id="@+id/logout"
             android:icon="@drawable/logout"
             android:title="Logout" />
